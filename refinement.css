@@ -1,0 +1,16 @@
+/* Match the envelope to the characters' warm, dimensional materials. */
+main{background:radial-gradient(ellipse at 50% 35%,#b17c35 0%,#64341b 42%,#2d130d 80%)}
+.arch{opacity:.22}
+header{font-size:clamp(9px,1.35svh,14px);letter-spacing:.26em;color:#ead1a1}
+.characters{top:5%;height:93%;mask-image:linear-gradient(transparent,#000 5%,#000 86%,transparent 100%)}
+.characters img{width:145%;left:-22.5%;top:-19.35484%;filter:saturate(.73) brightness(.88);mask-image:linear-gradient(90deg,transparent 5%,#000 22%,#000 78%,transparent 95%)}
+.envelope{width:49%;height:50%;left:25.5%;bottom:4%;border:1px solid #e7a06a;border-radius:10%/6%;background:radial-gradient(ellipse at 15% 5%,#ef6842,transparent 55%),linear-gradient(110deg,#c83824,#af251b 70%,#77150f);box-shadow:inset 3px 2px 4px #ffd0a36b,inset -9px -8px 20px #550d0c6b,0 16px 30px #17070099,0 0 35px #b7632626}
+.envelope::after{content:'';position:absolute;inset:7px;border:1px solid #efb17a38;border-radius:9%/5%;pointer-events:none}
+.flap{height:40%;border-bottom:3px solid #dfb86a;background:radial-gradient(ellipse at 30% 0,#f88152,#d74b30 55%,#b32a1d);box-shadow:0 5px 8px #4d100c66,inset 0 2px 3px #ffc39177;border-radius:10% 10% 50% 50%}
+.title{margin:12% 8% 0;font-size:clamp(17px,2.8svh,30px);line-height:1.12;letter-spacing:.02em;color:#f6dc9e;text-shadow:0 2px 1px #8e4b1a}
+.sub{font-size:clamp(7px,.95svh,10px);color:#f9dfc0;letter-spacing:.1em;line-height:1.7}
+.seal{top:31%;width:29%;left:35.5%;background:radial-gradient(circle at 30% 22%,#fff1bd,#e1b659 50%,#a77627);border:2px solid #eacf89;box-shadow:inset 0 0 0 4px #b783302b,inset 1px 2px 3px #fff4c9,0 6px 10px #590f0d88;color:#956327;text-shadow:0 1px #ffeab4}
+footer{bottom:10%;padding:0 10%}
+footer p{font-size:clamp(8px,1.05svh,12px);color:#f9dfbf;line-height:1.8;font-weight:normal;margin-bottom:12%}
+button{border:2px solid #f9e4a7;background:linear-gradient(150deg,#fff0b2,#eec468 44%,#d59b32);color:#734217;box-shadow:inset 0 2px 4px #fff9d9,0 4px 0 #90551b,0 8px 13px #5d130d77;font-size:clamp(12px,1.9svh,22px);padding:8% 0}
+.note{opacity:.55;font-size:8px}
