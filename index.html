@@ -12,14 +12,10 @@
     .cta{position:relative;isolation:isolate;overflow:hidden;width:min(82%,410px);margin-top:22px;border:2px solid #fff3a4;border-radius:999px;padding:18px 26px;background:linear-gradient(180deg,#fff4ae 0,#f9d45a 18%,#d99a16 52%,#f2bd36 78%,#9b6105 100%);color:#101d38;font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;font-style:italic;font-stretch:condensed;font-size:clamp(20px,2.25vw,27px);font-weight:900;letter-spacing:.045em;text-transform:uppercase;cursor:pointer;text-shadow:1px 1px 0 #fff2a0,2px 3px 0 #9b6a16;box-shadow:inset 0 2px 1px #fff9b8,inset 0 -5px 8px #75430099,0 5px 0 #754800,0 13px 28px #9b650066;animation:ctaPulse 1.65s ease-in-out infinite;transition:filter .18s ease}.cta::before{content:"";position:absolute;z-index:-1;inset:-40% auto -40% -45%;width:34%;transform:skewX(-22deg);background:linear-gradient(90deg,transparent,#fffbd8dd,transparent);animation:ctaShine 2.6s ease-in-out infinite}.cta:hover{filter:brightness(1.12)}.cta:active{animation:none;transform:scale(.97);box-shadow:inset 0 2px 1px #fff9b8,inset 0 -3px 6px #75430099,0 2px 0 #754800}.cta:focus-visible{outline:4px solid #1268bf;outline-offset:5px}.fineprint{text-align:center;margin:26px auto 0;max-width:760px;color:#447294;font-size:11px;line-height:1.5}@keyframes ctaPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.045)}}@keyframes ctaShine{0%,35%{left:-45%}70%,100%{left:125%}}
     @media(max-width:760px){.page{padding-top:28px}.intro{margin-bottom:22px}.rewards{grid-template-columns:1fr}.reward{border-radius:22px;padding:8px 8px 23px}.card-image{border-radius:17px}.cta{margin-top:18px;width:84%}}@media(prefers-reduced-motion:reduce){.cta,.cta::before{animation:none}.cta{transition:none}}
   </style>
-  <script>
-  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','1140849445377748');fbq('track','PageView');
-  </script>
-  <!-- Pixel Vault: website visitor tracking -->
+  <!-- Pixel Vault owns PageView and automatic .cta CompleteRegistration, including shared browser/server event IDs. Pixel: 1140849445377748. -->
   <script defer src="https://pixel-vault-adrian.wai98kin.chatgpt.site/tracker.js" data-site="eb60facc-b8d5-49cf-9c1e-b9b8b324084d"></script>
 </head>
 <body>
-  <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1140849445377748&amp;ev=PageView&amp;noscript=1"></noscript>
   <main class="page">
     <h1><img src="assets/reward-title-3d.png" alt="Free 20 + KYC 10 — Get Free 30 Now" style="display:block;width:min(100%,960px);height:auto;margin:0 auto"></h1><p class="intro">Two rewards for new members. Select your reward below to get started.</p>
     <section class="rewards" aria-label="Available rewards">
@@ -30,7 +26,7 @@
     <p class="fineprint">Rewards are subject to eligibility and applicable campaign terms. KYC verification is required for the RM10 reward.</p>
   </main>
   <script>
-  document.querySelectorAll('.cta').forEach(function(button){button.addEventListener('click',function(){var destination='https://4dlotto88.com/my/register';var nextTab=window.open(destination,'_blank');if(typeof fbq==='function'){fbq('track','CompleteRegistration',{reward:button.dataset.reward});fbq('track','Contact',{reward:button.dataset.reward});}if(!nextTab)window.location.href=destination})});
+  document.querySelectorAll('.cta').forEach(function(button){button.addEventListener('click',function(){var destination='https://4dlotto88.com/my/register';var nextTab=window.open(destination,'_blank');(window.pixelVaultQueue=window.pixelVaultQueue||[]).push(['Contact',{reward:button.dataset.reward},{eventId:crypto.randomUUID()}]);if(!nextTab)window.location.href=destination})});
   </script>
 </body>
 </html>
